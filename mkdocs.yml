@@ -1,0 +1,392 @@
+site_name: 2-Week GenAI & LLM Engineering Crash Training
+site_author: Nikhil Sharma
+site_description: A focused, hands-on GenAI and LLM engineering course — from transformers to production-ready agents.
+site_url: https://llm.learnwithnickk.com/
+
+repo_name: KirkYagami/2-Week-GenAI-LLM-Engineering-Crash-Training
+repo_url: https://github.com/KirkYagami/2-Week-GenAI-LLM-Engineering-Crash-Training
+
+copyright: Made with ❤️ by <a href="https://www.linkedin.com/in/-nikhil/" target="_blank">Nikhil Sharma</a>
+
+
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - roamlinks
+  - callouts
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+  - md_in_html
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/-nikhil/
+      name: Nikhil Sharma on LinkedIn
+    - icon: fontawesome/brands/github
+      link: https://github.com/KirkYagami
+      name: KirkYagami on GitHub
+    - icon: fontawesome/solid/envelope
+      link: mailto:er.nikhilsharma7@gmail.com
+      name: Email Nikhil
+
+nav:
+  - Home: index.md
+  - Notebooks: notebooks.md
+
+  - Week 01 — LLM Fundamentals:
+    - Overview: Week-01/README.md
+
+    - Day 01 — How LLMs Work & Prompt Engineering:
+      - Part 1 — How LLMs Work:
+        - Agenda: Week-01/Day-01-Part-1-How-LLMs-Work/00-agenda.md
+        - Transformers and Attention: Week-01/Day-01-Part-1-How-LLMs-Work/01-transformers-and-attention.md
+        - Tokenization: Week-01/Day-01-Part-1-How-LLMs-Work/02-tokenization.md
+        - Context Windows: Week-01/Day-01-Part-1-How-LLMs-Work/03-context-windows.md
+        - How LLMs Generate Text: Week-01/Day-01-Part-1-How-LLMs-Work/04-how-llms-generate-text.md
+        - Practice Exercises: Week-01/Day-01-Part-1-How-LLMs-Work/05-practice-exercises.md
+        - Interview Questions: Week-01/Day-01-Part-1-How-LLMs-Work/06-interview-questions.md
+      - Part 2 — Prompt Engineering:
+        - Agenda: Week-01/Day-01-Part-2-Prompt-Engineering/00-agenda.md
+        - Zero-Shot and Few-Shot: Week-01/Day-01-Part-2-Prompt-Engineering/01-zero-shot-and-few-shot.md
+        - Chain-of-Thought: Week-01/Day-01-Part-2-Prompt-Engineering/02-chain-of-thought.md
+        - Structured Output: Week-01/Day-01-Part-2-Prompt-Engineering/03-structured-output.md
+        - System Prompts: Week-01/Day-01-Part-2-Prompt-Engineering/04-system-prompts.md
+        - Advanced Prompt Patterns: Week-01/Day-01-Part-2-Prompt-Engineering/05-prompt-patterns.md
+        - Practice Exercises: Week-01/Day-01-Part-2-Prompt-Engineering/06-practice-exercises.md
+        - Interview Questions: Week-01/Day-01-Part-2-Prompt-Engineering/07-interview-questions.md
+
+    - Day 02 — APIs & Embeddings:
+      - Part 1 — OpenAI and Anthropic APIs:
+        - Agenda: Week-01/Day-02-Part-1-OpenAI-and-Anthropic-APIs/00-agenda.md
+        - OpenAI Chat Completions: Week-01/Day-02-Part-1-OpenAI-and-Anthropic-APIs/01-openai-chat-completions.md
+        - Vision and Multimodal: Week-01/Day-02-Part-1-OpenAI-and-Anthropic-APIs/02-vision-and-multimodal.md
+        - Tool Use with OpenAI: Week-01/Day-02-Part-1-OpenAI-and-Anthropic-APIs/03-tool-use-openai.md
+        - Anthropic Messages API: Week-01/Day-02-Part-1-OpenAI-and-Anthropic-APIs/04-anthropic-messages-api.md
+        - Cost and Rate Limits: Week-01/Day-02-Part-1-OpenAI-and-Anthropic-APIs/05-cost-and-rate-limits.md
+        - Practice Exercises: Week-01/Day-02-Part-1-OpenAI-and-Anthropic-APIs/06-practice-exercises.md
+        - Interview Questions: Week-01/Day-02-Part-1-OpenAI-and-Anthropic-APIs/07-interview-questions.md
+      - Part 2 — Embeddings and Semantic Search:
+        - Agenda: Week-01/Day-02-Part-2-Embeddings-and-Semantic-Search/00-agenda.md
+        - What Are Embeddings: Week-01/Day-02-Part-2-Embeddings-and-Semantic-Search/01-what-are-embeddings.md
+        - Embedding Models: Week-01/Day-02-Part-2-Embeddings-and-Semantic-Search/02-embedding-models.md
+        - Cosine Similarity: Week-01/Day-02-Part-2-Embeddings-and-Semantic-Search/03-cosine-similarity.md
+        - Vector Search: Week-01/Day-02-Part-2-Embeddings-and-Semantic-Search/04-vector-search.md
+        - Semantic Search Pipeline: Week-01/Day-02-Part-2-Embeddings-and-Semantic-Search/05-semantic-search-pipeline.md
+        - Practice Exercises: Week-01/Day-02-Part-2-Embeddings-and-Semantic-Search/06-practice-exercises.md
+        - Interview Questions: Week-01/Day-02-Part-2-Embeddings-and-Semantic-Search/07-interview-questions.md
+
+    - Day 03 — RAG & Vector Databases:
+      - Part 1 — RAG Basics:
+        - Agenda: Week-01/Day-03-Part-1-RAG-Basics/00-agenda.md
+        - What is RAG: Week-01/Day-03-Part-1-RAG-Basics/01-what-is-rag.md
+        - Chunking Strategies: Week-01/Day-03-Part-1-RAG-Basics/02-chunking-strategies.md
+        - Retrieval and Augmentation: Week-01/Day-03-Part-1-RAG-Basics/03-retrieval-and-augmentation.md
+        - RAG Pipeline End-to-End: Week-01/Day-03-Part-1-RAG-Basics/04-rag-pipeline-end-to-end.md
+        - RAG vs Fine-Tuning: Week-01/Day-03-Part-1-RAG-Basics/05-rag-vs-fine-tuning.md
+        - Practice Exercises: Week-01/Day-03-Part-1-RAG-Basics/06-practice-exercises.md
+        - Interview Questions: Week-01/Day-03-Part-1-RAG-Basics/07-interview-questions.md
+      - Part 2 — Vector Databases:
+        - Agenda: Week-01/Day-03-Part-2-Vector-Databases/00-agenda.md
+        - Vector DB Overview: Week-01/Day-03-Part-2-Vector-Databases/01-vector-db-overview.md
+        - ChromaDB: Week-01/Day-03-Part-2-Vector-Databases/02-chromadb.md
+        - Pinecone: Week-01/Day-03-Part-2-Vector-Databases/03-pinecone.md
+        - Qdrant: Week-01/Day-03-Part-2-Vector-Databases/04-qdrant.md
+        - Indexing and Filtering: Week-01/Day-03-Part-2-Vector-Databases/05-indexing-and-filtering.md
+        - Hybrid Search: Week-01/Day-03-Part-2-Vector-Databases/06-hybrid-search.md
+        - Practice Exercises: Week-01/Day-03-Part-2-Vector-Databases/07-practice-exercises.md
+        - Interview Questions: Week-01/Day-03-Part-2-Vector-Databases/08-interview-questions.md
+
+    - Day 04 — Evaluation & Responsible AI:
+      - Part 1 — LLM Evaluation:
+        - Agenda: Week-01/Day-04-Part-1-LLM-Evaluation/00-agenda.md
+        - Evaluation Overview: Week-01/Day-04-Part-1-LLM-Evaluation/01-evaluation-overview.md
+        - RAGAS Framework: Week-01/Day-04-Part-1-LLM-Evaluation/02-ragas-framework.md
+        - Hallucination and Faithfulness: Week-01/Day-04-Part-1-LLM-Evaluation/03-hallucination-and-faithfulness.md
+        - Relevance Metrics: Week-01/Day-04-Part-1-LLM-Evaluation/04-relevance-metrics.md
+        - Human Evaluations: Week-01/Day-04-Part-1-LLM-Evaluation/05-human-evals.md
+        - Practice Exercises: Week-01/Day-04-Part-1-LLM-Evaluation/06-practice-exercises.md
+        - Interview Questions: Week-01/Day-04-Part-1-LLM-Evaluation/07-interview-questions.md
+      - Part 2 — Responsible AI and Safety:
+        - Agenda: Week-01/Day-04-Part-2-Responsible-AI-and-Safety/00-agenda.md
+        - Jailbreaks and Prompt Injection: Week-01/Day-04-Part-2-Responsible-AI-and-Safety/01-jailbreaks-and-prompt-injection.md
+        - Guardrails: Week-01/Day-04-Part-2-Responsible-AI-and-Safety/02-guardrails.md
+        - Content Filtering: Week-01/Day-04-Part-2-Responsible-AI-and-Safety/03-content-filtering.md
+        - Bias and Fairness: Week-01/Day-04-Part-2-Responsible-AI-and-Safety/04-bias-and-fairness.md
+        - Practice Exercises: Week-01/Day-04-Part-2-Responsible-AI-and-Safety/05-practice-exercises.md
+        - Interview Questions: Week-01/Day-04-Part-2-Responsible-AI-and-Safety/06-interview-questions.md
+
+    - Day 05 — Hugging Face & Local LLMs:
+      - Part 1 — Hugging Face Ecosystem:
+        - Agenda: Week-01/Day-05-Part-1-Hugging-Face-Ecosystem/00-agenda.md
+        - Hugging Face Hub: Week-01/Day-05-Part-1-Hugging-Face-Ecosystem/01-hugging-face-hub.md
+        - Transformers Library: Week-01/Day-05-Part-1-Hugging-Face-Ecosystem/02-transformers-library.md
+        - Inference API: Week-01/Day-05-Part-1-Hugging-Face-Ecosystem/03-inference-api.md
+        - Spaces: Week-01/Day-05-Part-1-Hugging-Face-Ecosystem/04-spaces.md
+        - Datasets and Model Cards: Week-01/Day-05-Part-1-Hugging-Face-Ecosystem/05-datasets-and-models.md
+        - Practice Exercises: Week-01/Day-05-Part-1-Hugging-Face-Ecosystem/06-practice-exercises.md
+        - Interview Questions: Week-01/Day-05-Part-1-Hugging-Face-Ecosystem/07-interview-questions.md
+      - Part 2 — Local LLMs:
+        - Agenda: Week-01/Day-05-Part-2-Local-LLMs/00-agenda.md
+        - Why Run Locally: Week-01/Day-05-Part-2-Local-LLMs/01-why-run-locally.md
+        - Ollama: Week-01/Day-05-Part-2-Local-LLMs/02-ollama.md
+        - llama.cpp: Week-01/Day-05-Part-2-Local-LLMs/03-llama-cpp.md
+        - Quantization: Week-01/Day-05-Part-2-Local-LLMs/04-quantization.md
+        - When to Run Locally: Week-01/Day-05-Part-2-Local-LLMs/05-when-to-run-locally.md
+        - Practice Exercises: Week-01/Day-05-Part-2-Local-LLMs/06-practice-exercises.md
+        - Interview Questions: Week-01/Day-05-Part-2-Local-LLMs/07-interview-questions.md
+
+  - Week 02 — Building LLM Applications:
+    - Overview: Week-02/README.md
+
+    - Day 01 — LangChain & Advanced RAG:
+      - Part 1 — LangChain Fundamentals:
+        - Agenda: Week-02/Day-01-Part-1-LangChain-Fundamentals/00-agenda.md
+        - LangChain Overview: Week-02/Day-01-Part-1-LangChain-Fundamentals/01-langchain-overview.md
+        - Chains and Prompts: Week-02/Day-01-Part-1-LangChain-Fundamentals/02-chains-and-prompts.md
+        - Memory: Week-02/Day-01-Part-1-LangChain-Fundamentals/03-memory.md
+        - LCEL: Week-02/Day-01-Part-1-LangChain-Fundamentals/04-lcel.md
+        - Practice Exercises: Week-02/Day-01-Part-1-LangChain-Fundamentals/05-practice-exercises.md
+        - Interview Questions: Week-02/Day-01-Part-1-LangChain-Fundamentals/06-interview-questions.md
+      - Part 2 — Advanced RAG:
+        - Agenda: Week-02/Day-01-Part-2-Advanced-RAG/00-agenda.md
+        - Reranking: Week-02/Day-01-Part-2-Advanced-RAG/01-reranking.md
+        - HyDE: Week-02/Day-01-Part-2-Advanced-RAG/02-hyde.md
+        - Multi-Query Retrieval: Week-02/Day-01-Part-2-Advanced-RAG/03-multi-query.md
+        - Contextual Compression: Week-02/Day-01-Part-2-Advanced-RAG/04-contextual-compression.md
+        - Advanced RAG Patterns: Week-02/Day-01-Part-2-Advanced-RAG/05-advanced-rag-patterns.md
+        - Practice Exercises: Week-02/Day-01-Part-2-Advanced-RAG/06-practice-exercises.md
+        - Interview Questions: Week-02/Day-01-Part-2-Advanced-RAG/07-interview-questions.md
+
+    - Day 02 — Fine-Tuning & Function Calling:
+      - Part 1 — Fine-Tuning:
+        - Agenda: Week-02/Day-02-Part-1-Fine-Tuning/00-agenda.md
+        - Fine-Tuning Overview: Week-02/Day-02-Part-1-Fine-Tuning/01-fine-tuning-overview.md
+        - LoRA and QLoRA: Week-02/Day-02-Part-1-Fine-Tuning/02-lora-and-qlora.md
+        - PEFT: Week-02/Day-02-Part-1-Fine-Tuning/03-peft.md
+        - Training Data Preparation: Week-02/Day-02-Part-1-Fine-Tuning/04-training-data.md
+        - When to Fine-Tune: Week-02/Day-02-Part-1-Fine-Tuning/05-when-to-fine-tune.md
+        - Practice Exercises: Week-02/Day-02-Part-1-Fine-Tuning/06-practice-exercises.md
+        - Interview Questions: Week-02/Day-02-Part-1-Fine-Tuning/07-interview-questions.md
+      - Part 2 — Function Calling and Tool Use:
+        - Agenda: Week-02/Day-02-Part-2-Function-Calling-and-Tool-Use/00-agenda.md
+        - Function Calling Overview: Week-02/Day-02-Part-2-Function-Calling-and-Tool-Use/01-function-calling-overview.md
+        - OpenAI Tools API: Week-02/Day-02-Part-2-Function-Calling-and-Tool-Use/02-openai-tools.md
+        - Anthropic Tool Use: Week-02/Day-02-Part-2-Function-Calling-and-Tool-Use/03-anthropic-tool-use.md
+        - Structured Extraction: Week-02/Day-02-Part-2-Function-Calling-and-Tool-Use/04-structured-extraction.md
+        - Parallel Tool Calls: Week-02/Day-02-Part-2-Function-Calling-and-Tool-Use/05-parallel-tool-calls.md
+        - Practice Exercises: Week-02/Day-02-Part-2-Function-Calling-and-Tool-Use/06-practice-exercises.md
+        - Interview Questions: Week-02/Day-02-Part-2-Function-Calling-and-Tool-Use/07-interview-questions.md
+
+    - Day 03 — Agents & LangGraph:
+      - Part 1 — AI Agents:
+        - Agenda: Week-02/Day-03-Part-1-AI-Agents/00-agenda.md
+        - What Are AI Agents: Week-02/Day-03-Part-1-AI-Agents/01-what-are-agents.md
+        - The ReAct Loop: Week-02/Day-03-Part-1-AI-Agents/02-react-loop.md
+        - Planning Strategies: Week-02/Day-03-Part-1-AI-Agents/03-planning-strategies.md
+        - Tool-Calling Agents: Week-02/Day-03-Part-1-AI-Agents/04-tool-calling-agents.md
+        - Memory Strategies: Week-02/Day-03-Part-1-AI-Agents/05-memory-strategies.md
+        - Practice Exercises: Week-02/Day-03-Part-1-AI-Agents/06-practice-exercises.md
+        - Interview Questions: Week-02/Day-03-Part-1-AI-Agents/07-interview-questions.md
+      - Part 2 — LangGraph:
+        - Agenda: Week-02/Day-03-Part-2-LangGraph/00-agenda.md
+        - LangGraph Overview: Week-02/Day-03-Part-2-LangGraph/01-langgraph-overview.md
+        - Nodes and Edges: Week-02/Day-03-Part-2-LangGraph/02-nodes-and-edges.md
+        - Stateful Graphs: Week-02/Day-03-Part-2-LangGraph/03-stateful-graphs.md
+        - Conditional Routing: Week-02/Day-03-Part-2-LangGraph/04-conditional-routing.md
+        - Multi-Agent Orchestration: Week-02/Day-03-Part-2-LangGraph/05-multi-agent-orchestration.md
+        - Practice Exercises: Week-02/Day-03-Part-2-LangGraph/06-practice-exercises.md
+        - Interview Questions: Week-02/Day-03-Part-2-LangGraph/07-interview-questions.md
+
+    - Day 04 — LLMOps & Deployment:
+      - Part 1 — LLMOps:
+        - Agenda: Week-02/Day-04-Part-1-LLMOps/00-agenda.md
+        - Tracing and Logging: Week-02/Day-04-Part-1-LLMOps/01-tracing-and-logging.md
+        - LangSmith: Week-02/Day-04-Part-1-LLMOps/02-langsmith.md
+        - Cost Tracking: Week-02/Day-04-Part-1-LLMOps/03-cost-tracking.md
+        - Latency Optimization: Week-02/Day-04-Part-1-LLMOps/04-latency-optimization.md
+        - Observability: Week-02/Day-04-Part-1-LLMOps/05-observability.md
+        - Practice Exercises: Week-02/Day-04-Part-1-LLMOps/06-practice-exercises.md
+        - Interview Questions: Week-02/Day-04-Part-1-LLMOps/07-interview-questions.md
+      - Part 2 — Deployment:
+        - Agenda: Week-02/Day-04-Part-2-Deployment/00-agenda.md
+        - FastAPI Wrappers: Week-02/Day-04-Part-2-Deployment/01-fastapi-wrappers.md
+        - Streaming Responses: Week-02/Day-04-Part-2-Deployment/02-streaming-responses.md
+        - Async Patterns: Week-02/Day-04-Part-2-Deployment/03-async-patterns.md
+        - Serverless Deployment: Week-02/Day-04-Part-2-Deployment/04-serverless.md
+        - Caching Strategies: Week-02/Day-04-Part-2-Deployment/05-caching-strategies.md
+        - Practice Exercises: Week-02/Day-04-Part-2-Deployment/06-practice-exercises.md
+        - Interview Questions: Week-02/Day-04-Part-2-Deployment/07-interview-questions.md
+
+    - Day 05 — Capstone & Interview:
+      - Part 1 — Capstone Project:
+        - Agenda: Week-02/Day-05-Part-1-Capstone-Project/00-agenda.md
+        - Project Brief: Week-02/Day-05-Part-1-Capstone-Project/01-project-brief.md
+        - Architecture Design: Week-02/Day-05-Part-1-Capstone-Project/02-architecture-design.md
+        - Implementation: Week-02/Day-05-Part-1-Capstone-Project/03-implementation.md
+        - Evaluation and Testing: Week-02/Day-05-Part-1-Capstone-Project/04-evaluation-and-testing.md
+        - Presentation Guide: Week-02/Day-05-Part-1-Capstone-Project/05-presentation-guide.md
+        - Submission Checklist: Week-02/Day-05-Part-1-Capstone-Project/06-submission-checklist.md
+      - Part 2 — Mock Interview and Portfolio:
+        - Agenda: Week-02/Day-05-Part-2-Mock-Interview-and-Portfolio/00-agenda.md
+        - Resume Checklist: Week-02/Day-05-Part-2-Mock-Interview-and-Portfolio/01-resume-checklist.md
+        - Portfolio and GitHub: Week-02/Day-05-Part-2-Mock-Interview-and-Portfolio/02-portfolio-and-github.md
+        - Technical Interview Questions: Week-02/Day-05-Part-2-Mock-Interview-and-Portfolio/03-technical-interview-questions.md
+        - System Design Practice: Week-02/Day-05-Part-2-Mock-Interview-and-Portfolio/04-system-design-practice.md
+        - Mock Interview Script: Week-02/Day-05-Part-2-Mock-Interview-and-Portfolio/05-mock-interview-script.md
+
+  - Projects:
+    - RAG Q&A Chatbot:
+      - Overview: Projects/RAG-QA-Chatbot/README.md
+      - Setup: Projects/RAG-QA-Chatbot/01-setup.md
+      - Implementation: Projects/RAG-QA-Chatbot/02-implementation.md
+      - Advanced Features: Projects/RAG-QA-Chatbot/03-advanced-features.md
+      - Evaluation: Projects/RAG-QA-Chatbot/04-evaluation.md
+      - Deployment: Projects/RAG-QA-Chatbot/05-deployment.md
+      - Interview Questions: Projects/RAG-QA-Chatbot/06-interview-questions.md
+    - AI Writing Assistant:
+      - Overview: Projects/AI-Writing-Assistant/README.md
+      - Setup: Projects/AI-Writing-Assistant/01-setup.md
+      - Implementation: Projects/AI-Writing-Assistant/02-implementation.md
+      - Advanced Features: Projects/AI-Writing-Assistant/03-advanced-features.md
+      - Evaluation: Projects/AI-Writing-Assistant/04-evaluation.md
+      - Deployment: Projects/AI-Writing-Assistant/05-deployment.md
+      - Interview Questions: Projects/AI-Writing-Assistant/06-interview-questions.md
+    - Document Summarizer with Eval:
+      - Overview: Projects/Document-Summarizer-with-Eval/README.md
+      - Setup: Projects/Document-Summarizer-with-Eval/01-setup.md
+      - Implementation: Projects/Document-Summarizer-with-Eval/02-implementation.md
+      - Advanced Features: Projects/Document-Summarizer-with-Eval/03-advanced-features.md
+      - Evaluation: Projects/Document-Summarizer-with-Eval/04-evaluation.md
+      - Deployment: Projects/Document-Summarizer-with-Eval/05-deployment.md
+      - Interview Questions: Projects/Document-Summarizer-with-Eval/06-interview-questions.md
+    - Function-Calling Data Extractor:
+      - Overview: Projects/Function-Calling-Data-Extractor/README.md
+      - Setup: Projects/Function-Calling-Data-Extractor/01-setup.md
+      - Implementation: Projects/Function-Calling-Data-Extractor/02-implementation.md
+      - Advanced Features: Projects/Function-Calling-Data-Extractor/03-advanced-features.md
+      - Evaluation: Projects/Function-Calling-Data-Extractor/04-evaluation.md
+      - Deployment: Projects/Function-Calling-Data-Extractor/05-deployment.md
+      - Interview Questions: Projects/Function-Calling-Data-Extractor/06-interview-questions.md
+    - LangGraph Research Agent:
+      - Overview: Projects/LangGraph-Research-Agent/README.md
+      - Setup: Projects/LangGraph-Research-Agent/01-setup.md
+      - Implementation: Projects/LangGraph-Research-Agent/02-implementation.md
+      - Advanced Features: Projects/LangGraph-Research-Agent/03-advanced-features.md
+      - Evaluation: Projects/LangGraph-Research-Agent/04-evaluation.md
+      - Deployment: Projects/LangGraph-Research-Agent/05-deployment.md
+      - Interview Questions: Projects/LangGraph-Research-Agent/06-interview-questions.md
+    - Fine-Tuned Classifier:
+      - Overview: Projects/Fine-Tuned-Classifier/README.md
+      - Setup: Projects/Fine-Tuned-Classifier/01-setup.md
+      - Implementation: Projects/Fine-Tuned-Classifier/02-implementation.md
+      - Advanced Features: Projects/Fine-Tuned-Classifier/03-advanced-features.md
+      - Evaluation: Projects/Fine-Tuned-Classifier/04-evaluation.md
+      - Deployment: Projects/Fine-Tuned-Classifier/05-deployment.md
+      - Interview Questions: Projects/Fine-Tuned-Classifier/06-interview-questions.md
+
+  - Cheat Sheets:
+    - OpenAI API: Cheat-Sheets/openai-api-cheat-sheet.md
+    - Anthropic API: Cheat-Sheets/anthropic-api-cheat-sheet.md
+    - LangChain: Cheat-Sheets/langchain-cheat-sheet.md
+    - LangGraph: Cheat-Sheets/langgraph-cheat-sheet.md
+    - ChromaDB: Cheat-Sheets/chromadb-cheat-sheet.md
+    - Prompt Engineering: Cheat-Sheets/prompt-engineering-cheat-sheet.md
+    - RAG: Cheat-Sheets/rag-cheat-sheet.md
+    - Fine-Tuning: Cheat-Sheets/fine-tuning-cheat-sheet.md
+    - AI Agents: Cheat-Sheets/agents-cheat-sheet.md
+    - LLMOps: Cheat-Sheets/llmops-cheat-sheet.md
+
+  - Interview Prep:
+    - Overview: Interview-Preparation/README.md
+    - Prompt Engineering:
+      - Prompt Design: Interview-Preparation/01-Prompt-Engineering/01-prompt-design.md
+      - Chain-of-Thought: Interview-Preparation/01-Prompt-Engineering/02-chain-of-thought.md
+      - Structured Output: Interview-Preparation/01-Prompt-Engineering/03-structured-output.md
+    - RAG and Vector Search:
+      - RAG Fundamentals: Interview-Preparation/02-RAG-and-Vector-Search/01-rag-fundamentals.md
+      - Chunking and Retrieval: Interview-Preparation/02-RAG-and-Vector-Search/02-chunking-and-retrieval.md
+      - Vector Databases: Interview-Preparation/02-RAG-and-Vector-Search/03-vector-databases.md
+    - LLM APIs:
+      - OpenAI API: Interview-Preparation/03-LLM-APIs/01-openai-api.md
+      - Anthropic API: Interview-Preparation/03-LLM-APIs/02-anthropic-api.md
+      - Embeddings: Interview-Preparation/03-LLM-APIs/03-embeddings.md
+    - Agents and LangGraph:
+      - Agent Patterns: Interview-Preparation/04-Agents-and-LangGraph/01-agent-patterns.md
+      - LangGraph: Interview-Preparation/04-Agents-and-LangGraph/02-langgraph.md
+      - Tool Use: Interview-Preparation/04-Agents-and-LangGraph/03-tool-use.md
+    - Fine-Tuning:
+      - LoRA and QLoRA: Interview-Preparation/05-Fine-Tuning/01-lora-qlora.md
+      - Training Data: Interview-Preparation/05-Fine-Tuning/02-training-data.md
+      - Evaluation: Interview-Preparation/05-Fine-Tuning/03-evaluation.md
+    - LLMOps:
+      - Tracing and Monitoring: Interview-Preparation/06-LLMOps/01-tracing-and-monitoring.md
+      - Deployment: Interview-Preparation/06-LLMOps/02-deployment.md
+      - Cost Optimization: Interview-Preparation/06-LLMOps/03-cost-optimization.md
+    - System Design:
+      - LLM System Design: Interview-Preparation/07-System-Design/01-llm-system-design.md
+      - RAG Architecture: Interview-Preparation/07-System-Design/02-rag-architecture.md
+      - Agent System Design: Interview-Preparation/07-System-Design/03-agent-system-design.md
+    - Mock Interview Simulator: Interview-Preparation/08-mock-interview-simulator.md
+
+  - Glossary: glossary.md
+  - Progress Tracker: progress-tracker.md
+
+  - Assignments:
+    - Week 01: Assignments/week-01-assignment.md
+    - Week 02: Assignments/week-02-assignment.md
+
+  - Resources:
+    - Papers: Resources/papers.md
+    - Courses: Resources/courses.md
+    - YouTube Channels: Resources/youtube-channels.md
+    - Practice Platforms: Resources/practice-platforms.md

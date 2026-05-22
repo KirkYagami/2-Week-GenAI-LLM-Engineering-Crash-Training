@@ -1,0 +1,496 @@
+/*
+ * Focus Teal — color palette grounded in cognitive research
+ *
+ * Dark bg #0F172A  : deep navy (not black) eliminates halation on dark screens
+ * Primary #0D9488  : teal / blue-green (490–520 nm) promotes calm analytical focus
+ *                    (Mehta & Zhu 2009; biophilic color research)
+ * Accent  #F59E0B  : warm amber — draws attention like a highlighter, sparingly used
+ * Text    #F1F5F9  : cool off-white (~8:1 contrast) — softer than pure white
+ * Light bg #F8FAFC : very slightly blue-tinted white, easier than pure white
+ */
+
+/* ── Dark scheme ──────────────────────────────────────────────── */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:              #0D9488;
+  --md-primary-fg-color--light:       #14B8A6;
+  --md-primary-fg-color--dark:        #0F766E;
+  --md-primary-bg-color:              #F1F5F9;
+  --md-primary-bg-color--light:       rgba(241,245,249,0.7);
+  --md-accent-fg-color:               #F59E0B;
+  --md-accent-fg-color--transparent:  rgba(245,158,11,0.12);
+  --md-accent-bg-color:               #0F172A;
+
+  --md-default-bg-color:              #0F172A;
+  --md-default-fg-color:              #F1F5F9;
+  --md-default-fg-color--light:       #CBD5E1;
+  --md-default-fg-color--lighter:     #94A3B8;
+  --md-default-fg-color--lightest:    #475569;
+
+  --md-code-bg-color:                 #1E293B;
+  --md-code-fg-color:                 #E2E8F0;
+
+  --md-typeset-a-color:               #2DD4BF;
+  --md-typeset-mark-color:            rgba(245,158,11,0.25);
+}
+
+/* ── Light scheme — Warm Notebook ─────────────────────────────
+ * Inspired by visual-thinking / sketchbook aesthetics:
+ * warm off-white bg, charcoal text, muted blue links,
+ * warm orange-brown accent. Soft contrast, distraction-free.
+ * ──────────────────────────────────────────────────────────── */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:              #4A78A8;
+  --md-primary-fg-color--light:       #5A88B8;
+  --md-primary-fg-color--dark:        #3A6898;
+  --md-primary-bg-color:              #F7F5F2;
+  --md-primary-bg-color--light:       rgba(247,245,242,0.7);
+  --md-accent-fg-color:               #C97845;
+  --md-accent-fg-color--transparent:  rgba(201,120,69,0.12);
+  --md-accent-bg-color:               #F7F5F2;
+
+  --md-default-bg-color:              #F7F5F2;
+  --md-default-fg-color:              #2B2B2B;
+  --md-default-fg-color--light:       #6B6B6B;
+  --md-default-fg-color--lighter:     #9B9B9B;
+  --md-default-fg-color--lightest:    #D8D3CD;
+
+  --md-code-bg-color:                 #ECE7E1;
+  --md-code-fg-color:                 #3A3530;
+
+  --md-typeset-a-color:               #4A78A8;
+  --md-typeset-mark-color:            rgba(201,120,69,0.22);
+}
+
+/* ── Header — dark mode ───────────────────────────────────────── */
+[data-md-color-scheme="slate"] .md-header {
+  background: linear-gradient(135deg, #0F172A 0%, #0F2D35 55%, #0D3D38 100%);
+  box-shadow: 0 1px 0 rgba(13,148,136,0.3), 0 4px 16px rgba(0,0,0,0.5);
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background: rgba(13,148,136,0.08);
+  border-top: 1px solid rgba(13,148,136,0.2);
+}
+
+[data-md-color-scheme="slate"] .md-tabs__link--active,
+[data-md-color-scheme="slate"] .md-tabs__link:hover {
+  color: #F59E0B !important;
+}
+
+/* ── Header — light / notebook mode ──────────────────────────── */
+[data-md-color-scheme="default"] .md-header {
+  background: #2B2B2B;
+  box-shadow: 0 1px 0 rgba(201,120,69,0.25), 0 3px 12px rgba(0,0,0,0.2);
+}
+
+[data-md-color-scheme="default"] .md-tabs {
+  background: #3A3530;
+  border-top: 1px solid rgba(201,120,69,0.2);
+}
+
+[data-md-color-scheme="default"] .md-tabs__link {
+  color: #D8D3CD;
+}
+
+[data-md-color-scheme="default"] .md-tabs__link--active,
+[data-md-color-scheme="default"] .md-tabs__link:hover {
+  color: #C97845 !important;
+}
+
+/* ── Logo ─────────────────────────────────────────────────────── */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 32px;
+  width:  32px;
+}
+
+/* ── Headings ─────────────────────────────────────────────────── */
+.md-typeset h1 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: #2DD4BF;
+}
+
+[data-md-color-scheme="default"] .md-typeset h1 {
+  color: #3A6898;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  border-bottom: 1px solid rgba(13,148,136,0.25);
+  padding-bottom: 0.2em;
+}
+
+[data-md-color-scheme="default"] .md-typeset h2 {
+  color: #2B2B2B;
+  border-bottom: 1px solid #D8D3CD;
+  padding-bottom: 0.2em;
+}
+
+[data-md-color-scheme="default"] .md-typeset h3 {
+  color: #3A3530;
+}
+
+/* ── Code ─────────────────────────────────────────────────────── */
+.md-typeset code {
+  border-radius: 4px;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+  background: #1E293B;
+  color: #7DD3D8;
+}
+
+[data-md-color-scheme="default"] .md-typeset code {
+  background: #ECE7E1;
+  color: #3A3530;
+  border: 1px solid #D8D3CD;
+}
+
+/* ── Admonition / callout accent ──────────────────────────────── */
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset details {
+  border-left-color: #0D9488;
+}
+
+[data-md-color-scheme="default"] .md-typeset .admonition,
+[data-md-color-scheme="default"] .md-typeset details {
+  background: #F0EDE9;
+  border-left-color: #C97845;
+  box-shadow: none;
+  border-radius: 0 6px 6px 0;
+}
+
+/* ── Contact banner (index page) ─────────────────────────────── */
+.contact-banner {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  margin-top: 1rem;
+  border-top: 2px solid var(--md-accent-fg-color);
+  border-radius: 0 0 8px 8px;
+}
+
+.contact-banner h2 {
+  color: var(--md-accent-fg-color) !important;
+  margin-bottom: 0.75rem;
+}
+
+.contact-banner a {
+  color: var(--md-accent-fg-color) !important;
+  font-weight: 600;
+}
+
+/* ── Footer ───────────────────────────────────────────────────── */
+[data-md-color-scheme="slate"] .md-footer {
+  background: #080F1A;
+}
+
+[data-md-color-scheme="slate"] .md-footer-nav {
+  background: #0F172A;
+}
+
+[data-md-color-scheme="slate"] .md-footer-meta {
+  border-top: 1px solid rgba(13,148,136,0.3);
+}
+
+[data-md-color-scheme="default"] .md-footer {
+  background: #2B2B2B;
+}
+
+[data-md-color-scheme="default"] .md-footer-nav {
+  background: #3A3530;
+}
+
+[data-md-color-scheme="default"] .md-footer-nav__link {
+  color: #D8D3CD;
+}
+
+[data-md-color-scheme="default"] .md-footer-nav__link:hover {
+  color: #C97845;
+}
+
+[data-md-color-scheme="default"] .md-footer-meta {
+  border-top: 1px solid rgba(201,120,69,0.3);
+}
+
+[data-md-color-scheme="default"] .md-footer-copyright__highlight a {
+  color: #C97845 !important;
+}
+
+[data-md-color-scheme="default"] .md-social__link svg {
+  fill: #C97845;
+}
+
+[data-md-color-scheme="default"] .md-social__link:hover svg {
+  fill: #E8955A;
+}
+
+.md-footer-meta__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 1.25rem 0;
+}
+
+.md-footer-copyright {
+  text-align: center;
+  width: 100%;
+  order: 2;
+}
+
+.md-footer-copyright__highlight {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.md-footer-copyright__highlight a {
+  color: #F59E0B;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.md-footer-copyright__highlight a:hover {
+  color: #FCD34D;
+  text-decoration: underline;
+}
+
+.md-social {
+  padding: 0;
+  order: 1;
+}
+
+.md-social__link svg {
+  fill: #0D9488;
+}
+
+.md-social__link:hover svg {
+  fill: #2DD4BF;
+}
+
+/* ════════════════════════════════════════════════════════════════
+ * Sidebar Navigation — Three-Tier Visual Hierarchy
+ *
+ * The problem: group headers and leaf page links look identical.
+ * The fix: three visually distinct tiers —
+ *
+ *  Tier 1  .md-nav__item--nested > .md-nav__link
+ *          Group/folder labels (project names, day folders).
+ *          → ALLCAPS, muted gray, thin separator line above each
+ *            group. Reads as structural, not as a clickable page.
+ *
+ *  Tier 2  .md-nav__item:not(.md-nav__item--nested) > .md-nav__link
+ *          Leaf page links (actual content pages).
+ *          → Normal case, slightly darker, left-border pill that
+ *            becomes visible on hover and fills on active page.
+ *
+ *  Tier 3  .md-nav__link--active
+ *          Currently open page.
+ *          → Teal (dark) / blue (light), solid left border, subtle
+ *            background tint so location is immediately obvious.
+ *
+ * All rules scoped to .md-sidebar--primary — tabs and other
+ * components are unaffected.
+ * ════════════════════════════════════════════════════════════════ */
+
+/* ── Tier 1: Group / folder labels ───────────────────────────── */
+
+.md-sidebar--primary .md-nav__item--nested > .md-nav__link {
+  font-size: 0.67rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  padding-top: 1.1rem;
+  padding-bottom: 0.2rem;
+  cursor: default;            /* not a clickable page — visual cue */
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item--nested > .md-nav__link {
+  color: #4B5D72;             /* muted slate — clearly subordinate to page links */
+  border-top: 1px solid rgba(148, 163, 184, 0.10);
+}
+
+[data-md-color-scheme="default"] .md-sidebar--primary .md-nav__item--nested > .md-nav__link {
+  color: #A8A29E;             /* muted warm gray — matches warm notebook palette */
+  border-top: 1px solid #E0DBD5;
+}
+
+/* First group needs no separator above it */
+.md-sidebar--primary .md-nav__item--nested:first-child > .md-nav__link {
+  padding-top: 0.25rem;
+  border-top: none;
+}
+
+/* ── Tier 2: Leaf page links ──────────────────────────────────── */
+
+.md-sidebar--primary .md-nav__item:not(.md-nav__item--nested) > .md-nav__link {
+  font-size: 0.76rem;
+  border-left: 2px solid transparent;
+  padding-left: 0.65rem;
+  border-radius: 0 3px 3px 0;
+  transition: color 0.12s ease, border-left-color 0.12s ease, background-color 0.12s ease;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item:not(.md-nav__item--nested) > .md-nav__link {
+  color: #94A3B8;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__item:not(.md-nav__item--nested) > .md-nav__link:hover {
+  color: #CBD5E1;
+  border-left-color: rgba(13, 148, 136, 0.4);
+  background-color: rgba(13, 148, 136, 0.05);
+}
+
+[data-md-color-scheme="default"] .md-sidebar--primary .md-nav__item:not(.md-nav__item--nested) > .md-nav__link {
+  color: #6B6B6B;
+}
+
+[data-md-color-scheme="default"] .md-sidebar--primary .md-nav__item:not(.md-nav__item--nested) > .md-nav__link:hover {
+  color: #2B2B2B;
+  border-left-color: rgba(74, 120, 168, 0.4);
+  background-color: rgba(74, 120, 168, 0.05);
+}
+
+/* ── Tier 3: Active page ──────────────────────────────────────── */
+
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link--active {
+  color: #2DD4BF !important;
+  border-left-color: #0D9488 !important;
+  font-weight: 600 !important;
+  background-color: rgba(13, 148, 136, 0.08) !important;
+}
+
+[data-md-color-scheme="default"] .md-sidebar--primary .md-nav__link--active {
+  color: #4A78A8 !important;
+  border-left-color: #4A78A8 !important;
+  font-weight: 600 !important;
+  background-color: rgba(74, 120, 168, 0.08) !important;
+}
+
+/* ════════════════════════════════════════════════════════════════
+ * Layout — Wider Content Area
+ *
+ * Default Material grid caps at 61rem (~976px), leaving a lot of
+ * unused space on wider monitors. Expanding to 80rem gives content
+ * ~55rem of actual reading width while keeping both sidebars.
+ * ════════════════════════════════════════════════════════════════ */
+
+.md-grid {
+  max-width: 80rem;
+}
+
+/* ════════════════════════════════════════════════════════════════
+ * Left Sidebar — Collapsible Section Transitions
+ *
+ * navigation.expand removed from mkdocs.yml so sections start
+ * collapsed. These rules add a smooth slide animation.
+ * ════════════════════════════════════════════════════════════════ */
+
+.md-sidebar--primary .md-nav__toggle ~ .md-nav {
+  overflow: hidden;
+  transition: max-height 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ════════════════════════════════════════════════════════════════
+ * Right Sidebar — Table of Contents (within-page navigation)
+ *
+ * Two-level visual hierarchy: h2 links are slightly bolder and
+ * larger; h3 links are smaller and indented. A faint vertical rail
+ * anchors the column. The active heading gets the same teal pill
+ * treatment as the left sidebar's Tier 3 active state.
+ *
+ * toc.follow (mkdocs.yml) keeps .md-nav__link--active updated as
+ * the user scrolls, so the pill always tracks the visible section.
+ * ════════════════════════════════════════════════════════════════ */
+
+/* Faint vertical rail running the full height of the TOC */
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav--secondary {
+  border-left: 1px solid rgba(148, 163, 184, 0.08);
+}
+
+[data-md-color-scheme="default"] .md-sidebar--secondary .md-nav--secondary {
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* "On this page" label — same style as left sidebar group headers */
+.md-sidebar--secondary .md-nav__title {
+  font-size: 0.63rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.5rem 0.65rem 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__title {
+  color: #4B5D72;
+}
+
+[data-md-color-scheme="default"] .md-sidebar--secondary .md-nav__title {
+  color: #A8A29E;
+}
+
+/* All TOC links — shared base */
+.md-sidebar--secondary .md-nav__link {
+  border-left: 2px solid transparent;
+  border-radius: 0 3px 3px 0;
+  padding: 0.22rem 0.5rem 0.22rem 0.65rem;
+  line-height: 1.45;
+  display: block;
+  transition: color 0.12s ease, border-left-color 0.12s ease, background-color 0.12s ease;
+}
+
+/* H2 level — slightly larger, medium weight */
+.md-sidebar--secondary .md-nav__item > .md-nav__link {
+  font-size: 0.735rem;
+  font-weight: 500;
+}
+
+/* H3 level — smaller, lighter, indented */
+.md-sidebar--secondary .md-nav__item .md-nav__item > .md-nav__link {
+  font-size: 0.695rem;
+  font-weight: 400;
+  padding-left: 1.15rem;
+}
+
+/* Dark mode — idle state */
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link {
+  color: #566880;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link:hover {
+  color: #94A3B8;
+  border-left-color: rgba(13, 148, 136, 0.4);
+  background-color: rgba(13, 148, 136, 0.05);
+}
+
+/* Light mode — idle state */
+[data-md-color-scheme="default"] .md-sidebar--secondary .md-nav__link {
+  color: #A8A29E;
+}
+
+[data-md-color-scheme="default"] .md-sidebar--secondary .md-nav__link:hover {
+  color: #4A78A8;
+  border-left-color: rgba(74, 120, 168, 0.35);
+  background-color: rgba(74, 120, 168, 0.04);
+}
+
+/* Active heading — teal pill (dark) / blue pill (light) */
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link--active {
+  color: #2DD4BF !important;
+  border-left-color: #0D9488 !important;
+  font-weight: 600 !important;
+  background-color: rgba(13, 148, 136, 0.09) !important;
+}
+
+[data-md-color-scheme="default"] .md-sidebar--secondary .md-nav__link--active {
+  color: #4A78A8 !important;
+  border-left-color: #4A78A8 !important;
+  font-weight: 600 !important;
+  background-color: rgba(74, 120, 168, 0.09) !important;
+}
