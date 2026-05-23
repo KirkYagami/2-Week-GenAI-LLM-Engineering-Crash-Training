@@ -2,6 +2,7 @@ mkdocs>=1.6.0
 mkdocs-material>=9.5.0
 mkdocs-roamlinks-plugin>=0.3.2
 mkdocs-callouts>=1.10.0
+mkdocs-excalidraw>=0.6.0
 
 # Course Python stack
 openai>=1.30.0

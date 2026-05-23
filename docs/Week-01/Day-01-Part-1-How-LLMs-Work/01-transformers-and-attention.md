@@ -11,6 +11,10 @@ Before transformers, language models processed text one word at a time — slow,
 
 ---
 
+![Transformer architecture — decoder-only stack](../../../drawings/transformer-architecture.excalidraw)
+
+---
+
 ## Why transformers replaced RNNs
 
 Recurrent Neural Networks (RNNs) processed tokens sequentially: word 1 → word 2 → word 3. Two problems:

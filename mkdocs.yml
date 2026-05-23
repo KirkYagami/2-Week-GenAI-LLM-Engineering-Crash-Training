@@ -48,6 +48,7 @@ plugins:
   - search
   - roamlinks
   - callouts
+  - excalidraw
 
 markdown_extensions:
   - admonition
