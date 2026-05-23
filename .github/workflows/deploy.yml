@@ -27,7 +27,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material mkdocs-roamlinks-plugin mkdocs-callouts
+          pip install mkdocs mkdocs-material mkdocs-roamlinks-plugin mkdocs-callouts mkdocs-excalidraw
 
       - name: Build site
         run: mkdocs build
