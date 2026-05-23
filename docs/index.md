@@ -23,21 +23,21 @@ After completing both weeks, you will be able to:
 
     | Day | Part 1 | Part 2 |
     |-----|--------|--------|
-    | 01 | [[Day-01-Part-1-How-LLMs-Work\|How LLMs Work]] | [[Day-01-Part-2-Prompt-Engineering\|Prompt Engineering]] |
-    | 02 | [[Day-02-Part-1-OpenAI-and-Anthropic-APIs\|OpenAI & Anthropic APIs]] | [[Day-02-Part-2-Embeddings-and-Semantic-Search\|Embeddings & Semantic Search]] |
-    | 03 | [[Day-03-Part-1-RAG-Basics\|RAG Basics]] | [[Day-03-Part-2-Vector-Databases\|Vector Databases]] |
-    | 04 | [[Day-04-Part-1-LLM-Evaluation\|LLM Evaluation]] | [[Day-04-Part-2-Responsible-AI-and-Safety\|Responsible AI & Safety]] |
-    | 05 | [[Day-05-Part-1-Hugging-Face-Ecosystem\|Hugging Face Ecosystem]] | [[Day-05-Part-2-Local-LLMs\|Local LLMs]] |
+    | 01 | [How LLMs Work](Week-01/Day-01-Part-1-How-LLMs-Work/00-agenda.md) | [Prompt Engineering](Week-01/Day-01-Part-2-Prompt-Engineering/00-agenda.md) |
+    | 02 | [OpenAI & Anthropic APIs](Week-01/Day-02-Part-1-OpenAI-and-Anthropic-APIs/00-agenda.md) | [Embeddings & Semantic Search](Week-01/Day-02-Part-2-Embeddings-and-Semantic-Search/00-agenda.md) |
+    | 03 | [RAG Basics](Week-01/Day-03-Part-1-RAG-Basics/00-agenda.md) | [Vector Databases](Week-01/Day-03-Part-2-Vector-Databases/00-agenda.md) |
+    | 04 | [LLM Evaluation](Week-01/Day-04-Part-1-LLM-Evaluation/00-agenda.md) | [Responsible AI & Safety](Week-01/Day-04-Part-2-Responsible-AI-and-Safety/00-agenda.md) |
+    | 05 | [Hugging Face Ecosystem](Week-01/Day-05-Part-1-Hugging-Face-Ecosystem/00-agenda.md) | [Local LLMs](Week-01/Day-05-Part-2-Local-LLMs/00-agenda.md) |
 
 === "Week 02 — Building LLM Applications"
 
     | Day | Part 1 | Part 2 |
     |-----|--------|--------|
-    | 01 | [[Day-01-Part-1-LangChain-Fundamentals\|LangChain Fundamentals]] | [[Day-01-Part-2-Advanced-RAG\|Advanced RAG]] |
-    | 02 | [[Day-02-Part-1-Fine-Tuning\|Fine-Tuning]] | [[Day-02-Part-2-Function-Calling-and-Tool-Use\|Function Calling & Tool Use]] |
-    | 03 | [[Day-03-Part-1-AI-Agents\|AI Agents]] | [[Day-03-Part-2-LangGraph\|LangGraph]] |
-    | 04 | [[Day-04-Part-1-LLMOps\|LLMOps]] | [[Day-04-Part-2-Deployment\|Deployment]] |
-    | 05 | [[Day-05-Part-1-Capstone-Project\|Capstone Project]] | [[Day-05-Part-2-Mock-Interview-and-Portfolio\|Mock Interview & Portfolio]] |
+    | 01 | [LangChain Fundamentals](Week-02/Day-01-Part-1-LangChain-Fundamentals/00-agenda.md) | [Advanced RAG](Week-02/Day-01-Part-2-Advanced-RAG/00-agenda.md) |
+    | 02 | [Fine-Tuning](Week-02/Day-02-Part-1-Fine-Tuning/00-agenda.md) | [Function Calling & Tool Use](Week-02/Day-02-Part-2-Function-Calling-and-Tool-Use/00-agenda.md) |
+    | 03 | [AI Agents](Week-02/Day-03-Part-1-AI-Agents/00-agenda.md) | [LangGraph](Week-02/Day-03-Part-2-LangGraph/00-agenda.md) |
+    | 04 | [LLMOps](Week-02/Day-04-Part-1-LLMOps/00-agenda.md) | [Deployment](Week-02/Day-04-Part-2-Deployment/00-agenda.md) |
+    | 05 | [Capstone Project](Week-02/Day-05-Part-1-Capstone-Project/00-agenda.md) | [Mock Interview & Portfolio](Week-02/Day-05-Part-2-Mock-Interview-and-Portfolio/00-agenda.md) |
 
 ---
 
@@ -47,12 +47,12 @@ Each project ships with a setup guide, full implementation, advanced features, e
 
 | # | Project | What You Build | Core Skills |
 |---|---------|----------------|-------------|
-| 1 | [[RAG-QA-Chatbot\|RAG Q&A Chatbot]] | PDF ingestion → embedding → retrieval → streaming answers with citations | ChromaDB, CrossEncoder reranking, RAGAS |
-| 2 | [[AI-Writing-Assistant\|AI Writing Assistant]] | 4-stage LCEL pipeline: outline → draft → refine → style check | LangChain, async streaming, SSE |
-| 3 | [[Document-Summarizer-with-Eval\|Document Summarizer]] | Map-reduce summarization with faithfulness and coherence evaluation | asyncio.gather, LLM-as-judge |
-| 4 | [[Function-Calling-Data-Extractor\|Function-Calling Extractor]] | Extract typed, validated data structures from unstructured text | OpenAI tools, Pydantic, schema generation |
-| 5 | [[LangGraph-Research-Agent\|LangGraph Research Agent]] | Planner → researcher → writer → critic loop with quality gating | LangGraph StateGraph, conditional routing |
-| 6 | [[Fine-Tuned-Classifier\|Fine-Tuned Classifier]] | QLoRA fine-tune a small model, merge weights, compare vs prompt-only | LoRA, PEFT, SFTTrainer, CPU serving |
+| 1 | [RAG Q&A Chatbot](Projects/RAG-QA-Chatbot/README.md) | PDF ingestion → embedding → retrieval → streaming answers with citations | ChromaDB, CrossEncoder reranking, RAGAS |
+| 2 | [AI Writing Assistant](Projects/AI-Writing-Assistant/README.md) | 4-stage LCEL pipeline: outline → draft → refine → style check | LangChain, async streaming, SSE |
+| 3 | [Document Summarizer](Projects/Document-Summarizer-with-Eval/README.md) | Map-reduce summarization with faithfulness and coherence evaluation | asyncio.gather, LLM-as-judge |
+| 4 | [Function-Calling Extractor](Projects/Function-Calling-Data-Extractor/README.md) | Extract typed, validated data structures from unstructured text | OpenAI tools, Pydantic, schema generation |
+| 5 | [LangGraph Research Agent](Projects/LangGraph-Research-Agent/README.md) | Planner → researcher → writer → critic loop with quality gating | LangGraph StateGraph, conditional routing |
+| 6 | [Fine-Tuned Classifier](Projects/Fine-Tuned-Classifier/README.md) | QLoRA fine-tune a small model, merge weights, compare vs prompt-only | LoRA, PEFT, SFTTrainer, CPU serving |
 
 ---
 
@@ -75,19 +75,19 @@ mkdocs serve           # open http://127.0.0.1:8000
 
 **Cheat Sheets** — one-page code references for every major tool
 
-[[openai-api-cheat-sheet|OpenAI API]] · [[anthropic-api-cheat-sheet|Anthropic API]] · [[langchain-cheat-sheet|LangChain LCEL]] · [[langgraph-cheat-sheet|LangGraph]] · [[chromadb-cheat-sheet|ChromaDB]] · [[prompt-engineering-cheat-sheet|Prompt Engineering]] · [[rag-cheat-sheet|RAG]] · [[fine-tuning-cheat-sheet|Fine-Tuning]] · [[agents-cheat-sheet|AI Agents]] · [[llmops-cheat-sheet|LLMOps]]
+[OpenAI API](Cheat-Sheets/openai-api-cheat-sheet.md) · [Anthropic API](Cheat-Sheets/anthropic-api-cheat-sheet.md) · [LangChain LCEL](Cheat-Sheets/langchain-cheat-sheet.md) · [LangGraph](Cheat-Sheets/langgraph-cheat-sheet.md) · [ChromaDB](Cheat-Sheets/chromadb-cheat-sheet.md) · [Prompt Engineering](Cheat-Sheets/prompt-engineering-cheat-sheet.md) · [RAG](Cheat-Sheets/rag-cheat-sheet.md) · [Fine-Tuning](Cheat-Sheets/fine-tuning-cheat-sheet.md) · [AI Agents](Cheat-Sheets/agents-cheat-sheet.md) · [LLMOps](Cheat-Sheets/llmops-cheat-sheet.md)
 
 **Interview Preparation**
 
-[[Interview-Preparation/README|Overview & Study Plan]] · [[08-mock-interview-simulator|Mock Interview Simulator]]
+[Overview & Study Plan](Interview-Preparation/README.md) · [Mock Interview Simulator](Interview-Preparation/08-mock-interview-simulator.md)
 
 **Resources**
 
-[[papers|Essential Papers]] · [[courses|Courses]] · [[youtube-channels|YouTube Channels]] · [[practice-platforms|Practice Platforms]]
+[Essential Papers](Resources/papers.md) · [Courses](Resources/courses.md) · [YouTube Channels](Resources/youtube-channels.md) · [Practice Platforms](Resources/practice-platforms.md)
 
 **Other**
 
-[[glossary|Glossary]] · [[progress-tracker|Progress Tracker]] · [[Notebooks|Companion Notebooks]]
+[Glossary](glossary.md) · [Progress Tracker](progress-tracker.md) · [Companion Notebooks](notebooks.md)
 
 ---
 
